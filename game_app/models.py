@@ -51,7 +51,6 @@ class Item(models.Model):
     nivel = models.PositiveIntegerField()
     cantidad = models.PositiveIntegerField(default=1)
 
-    # ¡Aquí está la corrección! Ahora apunta a la clase 'Personaje' directamente.
     personaje = models.ForeignKey(Personaje, on_delete=models.CASCADE, related_name="items_personaje")
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE, related_name="items_categoria")
 
