@@ -1,6 +1,6 @@
 from django.db import models
 
-# -------------Tablas----------------
+# -------------Tablass----------------
 class Categoria(models.Model):
     nombre = models.CharField(max_length=120)
     tipo = models.CharField(max_length=100, unique=True)
